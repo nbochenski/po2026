@@ -14,6 +14,7 @@ public class tree {
 		for(int k=0; k < 1; k++) {
 			System.out.println("*");
 	}
+		System.out.println();
 }
 }
 	}
