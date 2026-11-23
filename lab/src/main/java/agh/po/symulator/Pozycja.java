@@ -18,12 +18,4 @@ public class Pozycja {
     public String getPozycja(){
         return "(" + this.x + ","+ this.y + ")";
     }
-
-    public double getX() {
-        return x;
-    }
-
-    public double getY() {
-        return y;
-    }
 }
