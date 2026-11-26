@@ -15,12 +15,18 @@ public class SkrzyniaBiegów extends Komponent{
     }
 
     public void zwiększBieg() {
+        if(!sprzęgło.isStanSprzęgła()){
+            throw new IllegalStateException("nie moge zmienić biegu bez wcisnietego sprzęgła")
+        }
         if (aktualnyBieg < iloscBiegow) {
             aktualnyBieg++;
             aktualnePrzelozenie = aktualnyBieg * 0.5;
         }
     }
     public void zmniejszBieg() {
+        if (!sprzęgło.isStanSprzęgła()){
+            throw new IllegalStateException("nie moge zmienić biegu bez wcisnietego sprzęgła")
+        }
         if (aktualnyBieg > 0) {
             aktualnyBieg--;
             aktualnePrzelozenie = aktualnyBieg * 0.5;

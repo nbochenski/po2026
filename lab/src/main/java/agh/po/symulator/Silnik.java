@@ -19,4 +19,19 @@ public class Silnik extends Komponent{
     public int getObroty() {
         return obroty;
     }
+    public void ustawObroty(int noweObroty) {
+        if(noweObroty < 0){
+            this.obroty = 0;
+        } else if(noweObroty > maxObroty) {
+            this.obroty = maxObroty;
+        } else{
+            this.obroty = noweObroty;
+        }
+    }
+    public void zwiekszObroty(int delta){
+        ustawObroty(this.obroty + delta);
+    }
+    public void zmniejszObroty(int delta){
+        ustawObroty(this.obroty - delta);
+    }
 }

@@ -22,6 +22,7 @@ public class Samochód{
         double A = 0.02; // stały współczynnik ze zdjęcia prowadzącego
         return silnik.getObroty() * skrzynia.getAktPrzelozenie() * A;
     }
+    public void jedzDoCelu(P)
 
     public void wyświetlStan() {
         System.out.println("Obroty silnika: " + silnik.getObroty());
